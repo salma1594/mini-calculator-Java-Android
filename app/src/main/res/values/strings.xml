@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MINI CAlC</string>
+    <string name="multi_defualt">Multi</string>
+    <string name="sum_default">Sum</string>
+    <string name="sub_default">Sub</string>
+    <string name="second_number">Second Number</string>
+    <string name="first_number">First Number</string>
+    <string name="mini_calculator">Mini Calculator</string>
+</resources>

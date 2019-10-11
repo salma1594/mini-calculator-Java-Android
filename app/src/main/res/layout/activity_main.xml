@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/pic">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/appNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/mini_calculator"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#8D03A9F4"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            />
+        <LinearLayout
+            android:id="@+id/numberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/appNameView">
+
+            <EditText
+                android:id="@+id/firstNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#88B3E5FC"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:hint="@string/first_number"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/secondNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:hint="@string/second_number"
+                android:background="#88B3E5FC"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberLayout"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/multiTextV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#81BDBDBD"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/multi_defualt"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sumTextV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#81BDBDBD"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/sum_default"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subTextV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#81BDBDBD"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/sub_default"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultLayout"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/buttonMulti"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="#8500BCD4"
+                android:padding="16dp"
+                android:text="@string/multi_defualt"
+                android:textSize="14sp"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/buttonSum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="#8500BCD4"
+                android:padding="16dp"
+                android:text="@string/sum_default"
+                android:textSize="14sp"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/buttonSub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="#8500BCD4"
+                android:padding="16dp"
+                android:text="@string/sub_default"
+                android:textSize="14sp"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
